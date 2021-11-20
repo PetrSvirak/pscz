@@ -1,0 +1,222 @@
+/*----------------------------------------------------------
+The base color for this template is #333333. If you'd like
+to use a different color start by replacing all instances of
+#333333 with your new color.
+
+COLOR PALETTE
+FFFFFF  CFCFCF  6E6E6E  333333  171717  0A0A0A  000000
+----------------------------------------------------------*/
+body {
+	background-color: #CFCFCF;
+	font-size: .85em;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	color: #0A0A0A;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0A0A0A;
+}
+
+a:hover {
+	color: #171717;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ffffff;
+}
+
+p, ul {
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+	display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.5em;
+	color: #000000;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+#little_boxes h1, h2{
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+/*.page {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header, #header {
+	position: relative;
+	margin-bottom: 0px;
+	color: #000000;
+	padding: 0;
+}
+
+header h1, #header h1 {
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0;
+	color: #CFCFCF;
+	border: none;
+	line-height: 2em;
+	font-size: 32px !important;
+	text-shadow: 1px 1px 2px #111;
+}
+
+.personal_packground
+{
+	background-color: #333
+}
+
+#main {
+	padding: 30px 30px 15px 30px;
+	background-color: #CFCFCF;
+	border-radius: 4px 0 0 0;
+	-webkit-border-radius: 4px 0 0 0;
+	-moz-border-radius: 4px 0 0 0;
+}
+
+footer, 
+#footer {
+	background-color: #CFCFCF;
+	color: #333333;
+	padding: 10px 0;
+	text-align: center;
+	line-height: normal;
+	margin: 0 0 30px 0;
+	font-size: .9em;
+	border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+}*/
+
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+
+.error {
+	color: Red;
+}
+
+/* Custom styles
+----------------------------------------------------------*/
+div{
+	display: block;
+}
+#little_boxes{
+	margin: 0 auto;
+	text-align: center;	
+	/*float: left;*/
+	overflow: hidden;
+	padding: 2em;
+}
+.rectangle_link{
+	float: inherit;
+	display: inline-table;
+	text-align: center;
+	position: relative;    
+	margin: 1.2em;
+}
+.rectangle_link:active{ 
+	top: 5px;
+	left: 5px;    
+}
+
+a:hover.rectangle_link.disabled {
+	text-decoration: none;
+}
+
+.rectangle{
+	position: relative;
+	display: inline-table;
+	border: solid 2px #000000;
+	float: inherit;
+	border-radius: 7px 7px;
+	-webkit-border-radius: 7px 7px;
+	-moz-border-radius: 7px 0 0 0;
+	padding: 0.5em;
+	width: 18em;
+	height: 13em;
+	box-shadow: 10px 5px 20px #000000;
+}
+.rectangle_link:active .rectangle{    
+	box-shadow: 5px 0px 20px #000000;
+}
+.illustration
+{
+	width: 128px;
+	height: 128px;
+	border: 0;
+	display: inline;
+	margin: 0.2em;
+}
+.waldorf{
+	background-color: #ffffff;
+}
+.parents, .rep{
+	background-color: #90BB3A;
+}
+.teacher{
+	background-color: #DDFA00;
+}
+.cashier{
+	background-color: #8094C2;
+}
+.admin{
+	background-color: #919191;
+}
+/*.waldorf{
+	background-color: #277059;
+}*/
+.asys{
+	background-color: #5D88B3;
+}
+.accounts{
+	background-color: #822314;
+}
+.personal{
+	background-color: #FF8000;
+}
+
+.email-composer {
+	visibility: hidden;
+	height: 15px;
+	display: block;
+}
+.email-composer:before {
+	visibility: visible;
+	content: attr(data-username) "@" attr(data-firstname) attr(data-surename) "." attr(data-domain);
+	margin-left: 15px;
+}
